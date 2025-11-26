@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Головна — Комп’ютерний клуб</title>
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Головна</a></li>
+        <li class="dropdown">
+          <a href="#">More</a>
+          <div class="dropdown-content">
+            <a href="#">Link1</a>
+            <a href="#">Link2</a>
+            <a href="#">Link3</a>
+          </div>
+        </li>
+        <li><a href="#">Контакти</a></li>
+      </ul>
+    </nav>
+
+    <div class="search-container">
+      <div class="search-box">
+        <input type="text" placeholder="Пошук..." />
+        <i>🔍</i>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Комп’ютерний клуб</h1>
+      <p>Місце, де технології та емоції поєднуються в одне!</p>
+    </div>
+
+    <img src="image/club-photo.jpg" alt="Комп’ютерний клуб">
+  </section>
+
+  <section class="news-section">
+    <div class="news-card">
+      <img src="image/news1.jpg" alt="Новина 1">
+      <div class="card-content">
+        <h3>Змагання з кіберспорту</h3>
+        <p>Долучайся до турніру цього тижня!</p>
+      </div>
+    </div>
+
+    <div class="news-card">
+      <img src="image/news2.jpg" alt="Новина 2">
+      <div class="card-content">
+        <h3>Нові ігрові комп’ютери</h3>
+        <p>Оновлення техніки — ще більше FPS!</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="grid-section">
+    <div class="grid-item">Flex/Grid блок 1</div>
+    <div class="grid-item">Flex/Grid блок 2</div>
+    <div class="grid-item">Flex/Grid блок 3</div>
+  </section>
+
+  <button id="scrollTopBtn" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">↑</button>
+
+</body>
+</html>

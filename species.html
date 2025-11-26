@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Види комп’ютерів</title>
+    <link rel="stylesheet" href="./styles/species.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about_us.html">Про нас</a></li>
+                <li><a href="species.html" class="active">Види</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+                <li class="dropdown">
+                    <a href="#">More ▼</a>
+                    <ul class="submenu">
+                        <li><a href="#">Link1</a></li>
+                        <li><a href="#">Link2</a></li>
+                        <li><a href="#">Link3</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Види комп’ютерів</h1>
+        <section class="computer-grid">
+            <div class="computer-card">
+                <div class="overlay">
+                    <h3>Настільний ПК</h3>
+                    <p>Класичний комп’ютер для роботи та ігор</p>
+                </div>
+                <img src="./image/desktop.jpg" alt="Настільний ПК">
+            </div>
+            <div class="computer-card">
+                <div class="overlay">
+                    <h3>Ноутбук</h3>
+                    <p>Портативний пристрій для щоденного використання</p>
+                </div>
+                <img src="./image/laptop.jpg" alt="Ноутбук">
+            </div>
+            <div class="computer-card">
+                <div class="overlay">
+                    <h3>Сервер</h3>
+                    <p>Потужна система для зберігання даних</p>
+                </div>
+                <img src="./image/server.jpg" alt="Сервер">
+            </div>
+        </section>
+    </main>
+
+    <button class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">▲</button>
+
+    <footer>
+        <p>© 2025 Комп’ютерний клуб</p>
+    </footer>
+</body>
+</html>

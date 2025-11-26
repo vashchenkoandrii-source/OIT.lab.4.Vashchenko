@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ігрова кімната</title>
+    <link rel="stylesheet" href="./styles/wardroom.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about_us.html">Про нас</a></li>
+                <li><a href="species.html">Види</a></li>
+                <li><a href="wardroom.html" class="active">Ігрова кімната</a></li>
+                <li class="dropdown">
+                    <a href="#">More ▼</a>
+                    <ul class="submenu">
+                        <li><a href="#">Link1</a></li>
+                        <li><a href="#">Link2</a></li>
+                        <li><a href="#">Link3</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Ігрова кімната клубу</h1>
+
+        <section class="room-section">
+            <div class="room-card">
+                <div class="overlay">
+                    <h3>Кіберзона</h3>
+                    <p>Потужні ПК для змагань і LAN-турнірів</p>
+                </div>
+                <img src="./image/wardroom1.jpg" alt="Кіберзона">
+            </div>
+
+            <div class="room-card">
+                <div class="overlay">
+                    <h3>VR-зона</h3>
+                    <p>Занурення у віртуальну реальність</p>
+                </div>
+                <img src="./image/wardroom2.jpg" alt="VR-зона">
+            </div>
+
+            <div class="room-card">
+                <div class="overlay">
+                    <h3>Релакс-зона</h3>
+                    <p>Комфорт і кава після інтенсивних ігор</p>
+                </div>
+                <img src="./image/wardroom3.jpg" alt="Релакс-зона">
+            </div>
+        </section>
+
+        <section class="booking">
+            <h2>Забронювати кімнату</h2>
+            <form>
+                <label for="name">Ваше ім’я:</label>
+                <input type="text" id="name" placeholder="Введіть ім’я" required>
+
+                <label for="email">Електронна пошта:</label>
+                <input type="email" id="email" placeholder="Введіть email" required>
+
+                <label for="room">Тип кімнати:</label>
+                <select id="room" required>
+                    <option>Кіберзона</option>
+                    <option>VR-зона</option>
+                    <option>Релакс-зона</option>
+                </select>
+
+                <button type="submit">Забронювати</button>
+            </form>
+        </section>
+    </main>
+
+    <button class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">▲</button>
+
+    <footer>
+        <p>© 2025 Комп’ютерний клуб | Ігрова кімната</p>
+    </footer>
+</body>
+</html>
